@@ -1,0 +1,21 @@
+# Cloudflare Worker Configuration for Haven
+
+name = "haven-worker"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Environment variables (set these in Cloudflare Dashboard)
+# STRIPE_SECRET_KEY = "sk_live_..."
+# STRIPE_WEBHOOK_SECRET = "whsec_..."
+# SITE_URL = "https://haven.store"
+
+# KV Namespaces for storing orders and email subscriptions
+kv_namespaces = [
+    { binding = "ORDERS_KV", id = "your-orders-kv-id" },
+    { binding = "EMAILS_KV", id = "your-emails-kv-id" }
+]
+
+# Routes (connect this worker to your Pages site)
+routes = [
+    { pattern = "haven.store/api/*", zone_name = "haven.store" }
+]

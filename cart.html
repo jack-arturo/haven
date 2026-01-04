@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Haven</h1>
+                <p class="tagline">Reclaim Your Space</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#products">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container cart-page">
+        <h1>Your Cart</h1>
+
+        <div id="cartEmpty" class="empty-cart">
+            <p>Your cart is empty</p>
+            <a href="index.html#products" class="cta-button">Continue Shopping</a>
+        </div>
+
+        <div id="cartFilled" class="cart-filled" style="display: none;">
+            <div class="cart-items">
+                <div class="cart-header">
+                    <h2>Items</h2>
+                </div>
+                <div id="cartItemsList">
+                    <!-- Cart items will be rendered here -->
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotalPrice">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>FREE</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="totalPrice">$0.00</span>
+                </div>
+                <p class="shipping-note">Free shipping worldwide on all orders.</p>
+                <button id="checkoutBtn" class="checkout-button">Proceed to Checkout</button>
+                <a href="index.html#products" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Haven. Mindfully designed. Ethically made.</p>
+            <p class="footer-note">All covers ship within 5-7 business days.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

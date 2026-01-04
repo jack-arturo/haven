@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Product - Moroccan TV Cover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Haven</h1>
+                <p class="tagline">Reclaim Your Space</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#products">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-link">Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container product-page">
+        <div class="breadcrumb">
+            <a href="index.html#products">All Products</a> / <span id="productTitle">Loading...</span>
+        </div>
+
+        <div class="product-detail">
+            <div class="product-image">
+                <div class="placeholder-image" id="productImage">
+                    <p>Product Image</p>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 id="productName">Loading...</h1>
+                <p class="product-description" id="productDescription">Loading...</p>
+
+                <div class="product-details-section">
+                    <div class="size-selector">
+                        <h3>Select Size</h3>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="65" data-price="247">
+                                <span class="size-label">65"</span>
+                                <span class="size-price">$247</span>
+                            </button>
+                            <button class="size-btn" data-size="75" data-price="347">
+                                <span class="size-label">75"</span>
+                                <span class="size-price">$347</span>
+                            </button>
+                            <button class="size-btn" data-size="85" data-price="447">
+                                <span class="size-label">85"</span>
+                                <span class="size-price">$447</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="price-section">
+                        <p class="selected-price">Select a size</p>
+                    </div>
+
+                    <button class="add-to-cart-btn" id="addToCartBtn" disabled>Add to Cart</button>
+
+                    <div class="product-meta">
+                        <p><strong>Materials:</strong> <span id="productMaterials">Premium wool & cotton blend</span></p>
+                        <p><strong>Origin:</strong> <span id="productOrigin">Handwoven in Morocco</span></p>
+                        <p><strong>Care:</strong> Dry clean recommended</p>
+                        <p><strong>Limited Edition:</strong> Only 50 units available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="related-section">
+            <h2>Other Patterns</h2>
+            <div class="related-products" id="relatedProducts">
+                <!-- Related products will load here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Haven. Mindfully designed. Ethically made.</p>
+            <p class="footer-note">All covers ship within 5-7 business days.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

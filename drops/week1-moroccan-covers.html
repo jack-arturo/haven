@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moroccan TV Covers - Week 1 Drop - Haven</title>
+    <meta name="description" content="Hand-woven TV covers by Atlas Mountain artisans. Limited edition: 15 units per pattern. Hide the screen, reclaim the room.">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="logo">HAVEN</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/drops.html">Drops</a>
+                <a href="/notify.html">Notify Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="product-detail">
+        <div class="product-images">
+            <div class="product-main-image" id="mainImage">
+                <img id="productImg" src="/images/products/handwoven-indigo-kilim.jpg" alt="Moroccan TV Cover" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+        </div>
+
+        <div class="product-content">
+            <span class="hero-badge">Week 1 Drop - Limited Edition</span>
+            <h1>Moroccan TV Covers</h1>
+            <p class="product-artisan">Handwoven by master artisans in the Atlas Mountains of Morocco</p>
+
+            <div class="product-story">
+                <p>Your TV doesn't need to dominate the room when it's off. These handwoven covers transform
+                your screen into a piece of art—hiding the black rectangle and celebrating traditional Moroccan craft.</p>
+
+                <p style="margin-top: 1rem;">Each cover is made by Berber weavers using techniques passed down through generations.
+                The fabrics are durable, beautiful, and tell a story that spans centuries.</p>
+            </div>
+
+            <div class="product-scarcity">
+                <span class="scarcity-number">15 Units</span>
+                <span class="scarcity-text">Per pattern × size combination. Once gone, gone.</span>
+            </div>
+
+            <!-- Pattern Selection -->
+            <div class="variant-selector">
+                <label class="variant-label">Pattern</label>
+                <div class="variant-options" id="patternSelector">
+                    <div class="variant-option selected" data-pattern="atlas-blue">
+                        <span class="variant-option-name">Atlas Blue</span>
+                    </div>
+                    <div class="variant-option" data-pattern="marrakech-terracotta">
+                        <span class="variant-option-name">Marrakech Terracotta</span>
+                    </div>
+                    <div class="variant-option" data-pattern="sahara-cream">
+                        <span class="variant-option-name">Sahara Cream</span>
+                    </div>
+                    <div class="variant-option" data-pattern="medina-midnight">
+                        <span class="variant-option-name">Medina Midnight</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="variant-selector">
+                <label class="variant-label">TV Size</label>
+                <div class="variant-options" id="sizeSelector">
+                    <div class="variant-option selected" data-size="65" data-price="200">
+                        <span class="variant-option-name">65"</span>
+                        <span class="variant-option-price">$200</span>
+                    </div>
+                    <div class="variant-option" data-size="75" data-price="400">
+                        <span class="variant-option-name">75"</span>
+                        <span class="variant-option-price">$400</span>
+                    </div>
+                    <div class="variant-option" data-size="85" data-price="600">
+                        <span class="variant-option-name">85"</span>
+                        <span class="variant-option-price">$600</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing -->
+            <div class="product-pricing">
+                <div class="product-price-main" id="displayPrice">$200</div>
+            </div>
+
+            <!-- Buy Button -->
+            <button id="checkoutButton" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1.25rem;">
+                Buy Now - Direct Checkout
+            </button>
+
+            <p style="text-align: center; margin-top: 1rem; color: #6B7280; font-size: 0.9rem;">
+                Secure payment via Stripe · Ships within 2-3 weeks
+            </p>
+
+            <!-- Product Details -->
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #E5E7EB;">
+                <h3 style="font-size: 1.25rem; font-weight: 500; margin-bottom: 1rem;">Product Details</h3>
+                <ul style="color: #6B7280; line-height: 2;">
+                    <li>100% handwoven by Berber artisans in Morocco's Atlas Mountains</li>
+                    <li>Durable cotton-wool blend with traditional geometric patterns</li>
+                    <li>Velcro attachment system - easy on, easy off</li>
+                    <li>Machine washable (gentle cycle)</li>
+                    <li>Made to order - ships within 2-3 weeks</li>
+                    <li>Limited to 15 units per pattern/size combination</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: #FAF8F5; border-radius: 4px;">
+                <h4 style="font-weight: 500; margin-bottom: 0.5rem;">Why This Matters</h4>
+                <p style="color: #6B7280; font-size: 0.95rem; line-height: 1.8;">
+                    Every purchase directly supports artisan families in rural Morocco. These weavers use
+                    techniques that have been refined over centuries—techniques that are at risk of disappearing
+                    as younger generations move to cities. By buying a Haven product, you're not just getting
+                    something beautiful. You're preserving a craft tradition.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <section class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Haven</h3>
+                <p>Luxury minimalism meets global artisan craft. Reclaim your space from technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="/about.html">About</a></p>
+                <p><a href="/drops.html">All Drops</a></p>
+                <p><a href="/notify.html">Get Notified</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>hello@haven.store</p>
+                <p>Based in London, UK</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Haven. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script>
+        // Product variant selection and Stripe Checkout
+        const stripe = Stripe('YOUR_STRIPE_PUBLISHABLE_KEY'); // Replace with actual key
+
+        let selectedPattern = 'atlas-blue';
+        let selectedSize = '65';
+        let selectedPrice = 200;
+
+        // Pattern to image mapping
+        const patternImages = {
+            'atlas-blue': '/images/products/handwoven-indigo-kilim.jpg',
+            'marrakech-terracotta': '/images/products/moroccan-style-terracotta.jpg',
+            'sahara-cream': '/images/products/handwoven-beni-ourain.jpg',
+            'medina-midnight': '/images/products/berber-tribal-textile.jpg'
+        };
+
+        // Pattern selector
+        document.querySelectorAll('#patternSelector .variant-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('#patternSelector .variant-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                this.classList.add('selected');
+                selectedPattern = this.dataset.pattern;
+                updateImage();
+            });
+        });
+
+        // Size selector
+        document.querySelectorAll('#sizeSelector .variant-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('#sizeSelector .variant-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                this.classList.add('selected');
+                selectedSize = this.dataset.size;
+                selectedPrice = parseInt(this.dataset.price);
+                document.getElementById('displayPrice').textContent = '$' + selectedPrice;
+            });
+        });
+
+        function updateImage() {
+            const img = document.getElementById('productImg');
+            img.src = patternImages[selectedPattern];
+        }
+
+        // Checkout button
+        document.getElementById('checkoutButton').addEventListener('click', async function() {
+            const button = this;
+            button.disabled = true;
+            button.textContent = 'Loading...';
+
+            try {
+                // Call your Cloudflare Worker/API to create Stripe Checkout Session
+                const response = await fetch('/api/create-checkout-session', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        product: 'moroccan-tv-cover',
+                        pattern: selectedPattern,
+                        size: selectedSize,
+                        price: selectedPrice
+                    })
+                });
+
+                const session = await response.json();
+
+                // Redirect to Stripe Checkout
+                const result = await stripe.redirectToCheckout({
+                    sessionId: session.id
+                });
+
+                if (result.error) {
+                    alert(result.error.message);
+                    button.disabled = false;
+                    button.textContent = 'Buy Now - Direct Checkout';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Something went wrong. Please try again.');
+                button.disabled = false;
+                button.textContent = 'Buy Now - Direct Checkout';
+            }
+        });
+    </script>
+    <script src="/script.js"></script>
+</body>
+</html>

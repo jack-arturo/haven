@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Notified - Haven</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="logo">HAVEN</a>
+            <div class="nav-links">
+                <a href="/about.html">About</a>
+                <a href="/drops.html">Drops</a>
+                <a href="/notify.html">Notify Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="email-signup">
+        <h1>Never Miss a Drop</h1>
+        <p>New artisan products every week. Limited quantities. Get notified 24 hours before each launch.</p>
+        
+        <form class="email-form" id="notifyForm">
+            <input type="email" class="form-input" placeholder="your@email.com" required id="emailInput">
+            <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
+        
+        <div id="successMessage" style="display: none; margin-top: 2rem; padding: 1.5rem; background: #9CAF88; color: white; border-radius: 4px;">
+            <p style="margin: 0; font-weight: 500;">✓ You're on the list! Check your email to confirm.</p>
+        </div>
+
+        <div style="margin-top: 3rem; color: #6B7280; font-size: 0.9rem;">
+            <p>We respect your inbox. One email per week, no spam.</p>
+        </div>
+    </main>
+
+    <section class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Haven</h3>
+                <p>Luxury minimalism meets global artisan craft. Reclaim your space from technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="/about.html">About</a></p>
+                <p><a href="/drops.html">All Drops</a></p>
+                <p><a href="/notify.html">Get Notified</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>hello@haven.store</p>
+                <p>Based in London, UK</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Haven. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="/script.js"></script>
+</body>
+</html>
